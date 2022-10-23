@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import	"/style/style_Reset.css";
+
+div#wrap{
+	width: 1200px;
+	margin: 10px auto;
+}
+
+#wrap table#memListTbl{
+	width: 100%;
+	font-size: 11px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#wrap table#memListTbl td,
+#wrap table#memListTbl th{
+	border: 1px solid #000;	
+}
+
+button#memDelBtn{
+	background: none;
+	outline: none;
+	border: none;
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+/* ///////////// faqList 페이지 ///////////////// */
+main#main{
+	width: 1000px;
+	margin: 0 auto;
+}
+main#main>h1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;	
+}
+table#faqBoardList{
+	width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+}
+.faqListSelect, .faqListNo{
+    width: 70px;
+}
+#faqBoardList td:last-child{
+    text-align: left;
+    padding-left: 5px;
+}
+#faqBoardList thead{
+    background-color: rgb(255, 225, 85);
+}
+#faqBoardList thead tr{
+    border-bottom: 3px solid #aaa;
+}
+#faqBoardList tbody tr td:last-child{
+	text-align: center;
+}
+#faqBoardList thead th{
+    padding: 10px;
+}
+#faqBoardList tbody td{
+    padding: 20px 10px;
+}
+
+#faqBoardList tbody tr:last-child{
+    border-bottom: 3px solid #aaa;
+}
+#faqBoardList tfoot tr.listBtnArea td{
+    text-align: center;
+}
+button.listButtonStyle{
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #aaa;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+button.listButtonStyle:hover{
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+div#pagingArea{
+	text-align: center;
+	/* border: 1px solid #000; */	
+}
+
+div#pagingArea  {
+	padding: 20px 0;
+}
+
+div#pagingArea span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+div#pagingArea span:hover {
+	color: #aaa;  /*   a  => 16 * 11 : 176*/
+}
+
+div#pagingArea span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	cursor: default;
+}
+
+div#pagingArea span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+
+/* ///////////// faqWrite 페이지 ///////////////// */
+table#faqWriteTable{
+    width: 700px;
+    margin: 0 auto;
+}
+#faqWriteTable tr:not(tr:last-child)>td:first-child{
+    width: 70px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(255, 225, 85);
+}
+input#faqTitleInput{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #aaa;
+}
+textarea#faqContentInput{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    border: 1px solid #aaa;
+}
+#faqWriteTable tr:last-child{
+    text-align: right;
+}

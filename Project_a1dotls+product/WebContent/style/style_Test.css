@@ -1,0 +1,611 @@
+@charset "UTF-8";
+@import	"/style/style_Reset.css";
+
+header#header{
+	text-align: center;
+	margin-top: 30px;
+}
+div#wrap{
+	width: 100%;
+	position: relative;
+    top: 30px;
+    /* border: 1px solid #000; */
+    z-index: 1;
+}
+/* ///////////////////////////////////////////////// 메인 페이지 css */
+
+div.mainWrap{
+    width: 1200px;
+    /* border: 1px solid #f80; */
+    margin: 2px auto;	
+}
+.mainWrap>main#main{
+	margin: 0 auto;
+}
+.mainWrap>main#main>div#slideshowArea {
+	width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+   	/* border: 1px solid #000; */
+   	/* transform: translateX(-8%); */
+}
+.mainWrap>main#main>div#slideshowArea>div#slideFrame {
+	width: 3630px;
+	height: 500px;
+}
+.mainWrap #slideshowArea>#slideFrame>a {
+	width: 1200px;
+	height: 500px;
+	position: relative;
+}
+.mainWrap #slideshowArea>#slideFrame>a>span.slideTxt {
+	color: #fff;
+	width: 530px;
+	height: 80px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* transform: translate(-50%, -50%); */
+}
+.mainWrap #main div#contents{
+	margin: 150px auto;
+	text-align: center;
+	/* border: 1px solid #000; */
+}
+.mainWrap #main div#contents #product{
+	/* border: 1px solid #000; */
+}
+.mainWrap #main div#contents #productContents{
+	/* border: 1px solid #000; */
+	margin: 10px;
+	justify-content: space-around;
+}
+.mainWrap #main #contents #product .items{
+	width: 300px;
+	/* border: 1px solid #000;	 */
+	flex: 1;
+}
+.mainWrap #main #contents #recipe{
+	margin: 150px auto;
+}
+.mainWrap #main div#contents #recipeContents{
+	/* border: 1px solid #000; */
+	margin: 20px 10px;
+	justify-content: space-around;
+}
+.mainWrap #main #contents #recipe .items{
+	width: 300px;
+	/* border: 1px solid #000;	 */
+	flex: 1;
+}
+div#contents h1{
+	margin-bottom: 60px;	
+}
+div#contents p{
+	font-weight: bold;
+	font-size: 20px;
+}
+div#contents span{
+	font-size: 18px;
+}	
+/* ///////////////////////////////////////////////// 메인 페이지 css */
+
+/* ///////////////////////////////////////////////// 로그인 css */
+
+div.loginWrap main#main{
+	width: 550px;
+	height: 500px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 20px auto;
+}
+div.loginWrap #main *{
+	margin: 10px auto;
+}
+
+div.loginWrap #main table#inputTbl{
+	width: 330px;
+	margin: 30px auto;
+	/* border: 1px solid #000; */
+}
+div.loginWrap #main table#inputTbl *{
+	padding: 15px 0;
+}
+/* div.loginWrap #main table#inputTbl th,
+div.loginWrap #main table#inputTbl td{
+	border: 1px solid #000;
+}
+div.loginWrap #main table#inputTbl th{
+	font-size: 20px;
+	text-align: center;
+} */
+div.loginWrap #main table#inputTbl input{
+	width: 320px;
+	font-size: 18px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	outline: none;
+}
+div.loginWrap #main table#inputTbl button#loginBtn{
+	width: 320px;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 18px 5px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 25px;
+	background-color: rgb(255, 225, 85);
+}
+div#findArea *{
+	font-size: 17px;
+	padding: 0 10px;
+	/* border: 1px solid #000; */
+	display: inline-block;
+}
+footer#footer{
+	margin: 0 auto;
+	text-align: center;
+}
+footer.loginFooter iframe#iframeFooter {
+	width: 70%;
+	top: 250px;	
+	/* border: 1px solid #000; */
+}
+
+/* ///////////////////////////////////////////////// 로그인 css */
+
+/* ///////////////////////////////////////////////// 회원가입 css */
+div.joinWrap main#main{
+	width: 1000px;
+	height: 1200px;
+	/* border: 3px solid #ddd; */
+	border-radius: 6px;
+	text-align: center;
+	margin: 20px auto;
+}
+div.joinWrap h1{
+	text-align: center;
+	padding: 10px 0 60px;
+}
+div.joinWrap #main *{
+	margin: 10px auto;
+}
+.joinWrap #main table#joinFrmTbl{
+	width: 900px;
+	font-size: 17px;
+	/* border: 1px solid #000; */
+}
+/* .joinWrap #main table#joinFrmTbl th, */
+.joinWrap #main table#joinFrmTbl td{
+	/* border: 1px solid #000; */
+	/* padding: 7px; */
+}
+.joinWrap #main table#joinFrmTbl tbody td{
+	height: 80px;
+	border-bottom: 2px solid #aaa;
+}
+.joinWrap #main table#joinFrmTbl tbody td:nth-child(1){
+	width: 50%;
+	text-align: left;
+} 
+.joinWrap #main table#joinFrmTbl td:nth-child(1) input{
+	margin-left: 10px;
+}
+.joinWrap #main table#joinFrmTbl td:nth-child(3){
+	font-size: 15px;
+	text-align: center;
+} 
+.joinWrap #main table#joinFrmTbl td#uPhoneTd span,
+.joinWrap #main table#joinFrmTbl td#emailTd span{
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.joinWrap #main table#joinFrmTbl td#foodChkTd label{
+	margin-left: 20px;
+}
+.joinWrap #main table#joinFrmTbl td#foodChkTd input{
+	zoom: 1.2;
+	transform: translateY(2px);
+}
+
+.joinWrap #main table#joinFrmTbl input{
+	font-size: 17px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	outline: none;
+}
+.joinWrap #main table#joinFrmTbl button{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+}
+.joinWrap #main table#joinFrmTbl select#emailDomain{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+}
+.joinWrap #main #joinFrmTbl tfoot #chkAllArea{
+	margin-top: 50px;	
+}
+/* .joinWrap #main #joinFrmTbl tfoot td,
+.joinWrap #main #joinFrmTbl tfoot div.termArea,
+.joinWrap #main #joinFrmTbl tfoot div#chkBoxArea{
+	border: 1px solid #000;
+} */
+.joinWrap #main #joinFrmTbl tfoot div.termArea{
+	width: 60%;
+}
+.joinWrap #main #joinFrmTbl tfoot div#chkBoxArea{
+	width: 60%;
+	text-align: left;
+}
+.joinWrap #main #joinFrmTbl tfoot div#detailBtn{
+	transform: translateY(10px);	
+}
+.joinWrap #main #joinFrmTbl tfoot #chkAllArea label{
+	font-size: 20px;
+}
+.joinWrap #main #joinFrmTbl tfoot #chkAllArea label input{
+	transform: scale(1.5);
+}
+.joinWrap #main table#joinFrmTbl tfoot div.termArea h3{
+	font-size: 18px;
+}
+.joinWrap #main #joinFrmTbl tfoot #licenseArea label input{
+	transform: scale(1.5);
+}
+.joinWrap #main table#joinFrmTbl tfoot button#joinSbmBtn{
+	width: 250px;
+	text-align: center;
+	font-size: 25px;
+	padding: 25px 5px;
+	margin-top: 60px;
+	background-color: rgb(255, 225, 85);
+}
+/* .joinWrap #main table#joinFrmTbl div.termArea iframe.usingAgree{
+	width: 700px;
+    height: 171px;
+    padding: 10px 0 0;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 12px 8px 2px;
+
+    overflow: auto;
+    resize: none;  textarea 크기조절 비활성화
+} */
+footer.joinFooter iframe#iframeFooter {
+	width: 70%;
+	top: 400px;	
+	/* border: 1px solid #000; */
+}
+/* ///////////////////////////////////////////////// 회원가입 css */
+
+/* ///////////////////////////////////////////////// 아이디체크팝업 css */
+div#wrap_Popup{
+	text-align: center;
+	margin: 70px auto;
+}
+div#wrap_Popup h1{
+	display: inline-block;	
+}
+div#wrap_Popup div#popUpBtnArea button{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+	margin-top: 20px;
+}
+
+/* ///////////////////////////////////////////////// 아이디체크팝업 css */
+/* ///////////////////////////////////////////////// 아이디 찾기 css */
+div.findIdWrap #main{
+	border: 1px solid #000;
+	width: 550px;
+	height: 400px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 20px auto;
+}
+div.findIdWrap #main *{
+	margin: 5px auto;
+}
+
+div.findIdWrap #main table#findIdTbl{
+	width: 330px;
+	/* margin: 30px auto; */
+	/* border: 1px solid #000; */
+}
+div.findIdWrap #main table#findIdTbl *{
+	padding: 5px 0;
+}
+div.findIdWrap #main table#findIdTbl input{
+	width: 320px;
+	font-size: 18px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	outline: none;
+}
+div.findIdWrap #main table#findIdTbl button#findIdBtn{
+	width: 320px;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 18px 5px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 10px;
+	background-color: rgb(255, 225, 85);
+}
+/* ///////////////////////////////////////////////// 아이디 찾기 css */
+/* ///////////////////////////////////////////////// 비밀번호 찾기 css */
+div.findPwWrap #main{
+	border: 1px solid #000;
+	width: 550px;
+	height: 500px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 20px auto;
+}
+div.findPwWrap #main *{
+	margin: 5px auto;
+}
+
+div.findPwWrap #main table#findPwTbl{
+	width: 330px;
+	/* margin: 30px auto; */
+	/* border: 1px solid #000; */
+}
+div.findPwWrap #main table#findPwTbl *{
+	padding: 5px 0;
+}
+div.findPwWrap #main table#findPwTbl input{
+	width: 320px;
+	font-size: 18px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	outline: none;
+}
+div.findPwWrap #main table#findPwTbl button#findPwBtn{
+	width: 320px;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 18px 5px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 10px;
+	background-color: rgb(255, 225, 85);
+}
+/* ///////////////////////////////////////////////// 비밀번호 찾기 css */
+
+/* ///////////////////////////////////////////////// 마이페이지 (orderList.jsp) css */
+header.orderListHeader{
+	position: relative;
+}
+div.orderListWrap nav#lnbMenu{
+	width: 250px;
+	height: 800px;	
+	z-index: 0;
+	display: inline-block;
+}
+div.orderListWrap{
+	width: 100%;
+	/* border: 1px solid #000; */
+}
+div.orderListWrap main#main{
+	width: 1000px;
+	height: 600px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 10px auto 5px;
+	display: inline-block;
+}
+div.orderListWrap main#main h1{
+	margin: 55px 0;	
+}
+div.orderListWrap #main *{
+	margin: 10px auto;
+}
+.orderListWrap #main #orderList{
+	width: 1000px;
+	text-align: center;
+	/* border: 1px solid #000; */
+}
+/* .orderListWrap #main #orderList #orderContents{
+	justify-content: flex-start;
+} */
+.orderListWrap #main #orderList #orderContents>p{
+	font-size: 30px;
+	line-height: 100px;
+	/* border: 1px solid #000; */
+	margin-top: 50px;
+	display: inline-block;
+}
+.orderListWrap #main #orderList button{
+	width: 200px;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+}
+
+/* ///////////////////////////////// 회원 정보 수정 css */
+header.infoModHeader{
+	position: relative;
+}
+div.modWrap nav#lnbMenu{
+	width: 250px;
+	height: 1100px;	
+	z-index: 0;
+	display: inline-block;
+}
+div.modWrap{
+	width: 100%;
+	/* border: 1px solid #000; */
+}
+div.modWrap main#main{
+	width: 1200px;
+	height: 1100px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 10px auto 5px;
+}
+div.modWrap main#main h1{
+	margin: 55px 0;	
+}
+div.modWrap #main *{
+	margin: 10px auto;
+}
+.modWrap #main table#modFrmTbl th,
+.modWrap #main table#modFrmTbl td{
+	/* border: 1px solid #000;	 */
+	height: 80px;
+	border-bottom: 2px solid #aaa;
+}
+
+.modWrap #main table#modFrmTbl{
+	width: 1000px;
+	font-size: 17px;
+	border-collapse: collapse;
+	/* border: 1px solid #000; */
+}
+.modWrap #main table#modFrmTbl td:nth-child(2){
+	width: 45%;
+	text-align: left;
+}
+.modWrap #main table#modFrmTbl td:nth-child(2) input{
+	margin-left: 10px;
+	/* border:none; */
+}
+.modWrap #main table#modFrmTbl td.printTd{
+	padding-left: 30px;	
+}
+.modWrap #main table#modFrmTbl td:nth-child(3){
+	font-size: 15px;
+	text-align: center;
+} 
+.modWrap #main table#modFrmTbl input{
+	font-size: 17px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	outline: none;
+}
+.modWrap #main table#modFrmTbl button{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+}
+.modWrap #main table#modFrmTbl select#emailDomain{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+}
+.modWrap #main table#modFrmTbl td#uPhoneTd span,
+.modWrap #main table#modFrmTbl td#emailTd span{
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.modWrap #main table#modFrmTbl td#foodChkTd label{
+	margin-left: 20px;
+}
+.modWrap #main table#modFrmTbl td#foodChkTd input{
+	zoom: 1.2;
+	transform: translateY(2px);
+}
+.modWrap #main #modFrmTbl tfoot button#modBtn{
+	width: 250px;
+	text-align: center;
+	font-size: 25px;
+	padding: 25px 5px;
+	margin-top: 60px;
+}
+.modWrap #main #modFrmTbl tfoot td{
+	border: none;
+}
+/* ///////////////////////////////// 회원 탈퇴 css */
+div.memQuitWrap{
+	margin: 30px auto;
+}
+div.memQuitWrap #main{
+	border: 1px solid #000;
+	width: 550px;
+	height: 400px;
+	border: 3px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+	margin: 20px auto;
+}
+div.memQuitWrap #main *{
+	margin: 5px auto;
+}
+div.memQuitWrap #main h4{
+	display: inline-block;
+	margin-top: 50px;
+}
+div.memQuitWrap #main table#memQuitTbl{
+	width: 330px;
+	/* margin: 30px auto; */
+	/* border: 1px solid #000; */
+}
+div.memQuitWrap #main table#memQuitTbl *{
+	padding: 5px 0;
+}
+div.memQuitWrap #main table#memQuitTbl input{
+	width: 320px;
+	font-size: 18px;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	margin-top: 10px;
+	outline: none;
+}
+div.memQuitWrap #main table#memQuitTbl button#quitBtn{
+	width: 320px;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 18px 5px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 30px;
+	background-color: rgb(255, 225, 85);
+}
+
+/* ///////////////////////////////// 회원 탈퇴 css */
+
+
+/* ///////////////////////////////////////////////// 마이페이지 css */

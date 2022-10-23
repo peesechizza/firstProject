@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import	"/style/style_Reset.css";
+/* /////////////////////////////////////////////////////// 레시피 리스트 css  */
+div.rListWrap{
+}
+
+main#main{
+	width: 1200px;
+	/* border: 1px solid #000; */
+	margin-left: 10%;
+}
+main#main>h3{
+	text-align: center;
+	font-size: 25px;	
+}
+#main div#contents{
+	flex-direction: column;
+}
+#main #pageInfo{
+	width: 100%;
+	margin-bottom: 30px;
+	display: block;
+}
+#main #pageInfo>span{
+	/* width: 100%; */
+	font-size: 14px;
+	/* border: 1px solid #000; */
+	margin-left: 40px;
+}
+#main div#recipeArea{
+	/* margin: 10px auto; */
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* border: 1px solid #000; */
+}
+#main div.recipeItem{
+	margin: 20px 10px;
+	border: 2px solid #aaa;
+	border-radius : 2px;
+}
+#main div.recipeItem div.itemImg{
+	width: 300px;
+	height: 300px;
+	/* border: 1px solid #000; */
+}
+#main div.recipeItem div.itemContent{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	/* border: 1px solid #000;	 */
+	
+}
+div#listBtnArea{
+	width: 91%;
+	/* border: 1px solid #000; */
+	margin: 40px auto 0;
+	justify-content: space-between;
+}
+/* div#listBtnArea *{
+	border: 1px solid #000;	
+} */
+div#listBtnArea button.listBtnStyle{
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+}
+div#listBtnArea form#searchFrm select,
+div#listBtnArea form#searchFrm input{
+	font-size: 16px;
+	padding: 7px 6px;	
+	border: none;
+}
+div#listBtnArea form#searchFrm input{
+	border: 1px solid #aaa;
+	border-radius: 3px;	
+}
+div#listPagingArea{
+	text-align: center;
+	/* border: 1px solid #000; */	
+}
+
+div#listPagingArea div#pagingDiv {
+	padding: 20px 0;
+}
+
+div#listPagingArea div#pagingDiv span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+div#listPagingArea div#pagingDiv span:hover {
+	color: #aaa;  /*   a  => 16 * 11 : 176*/
+}
+
+div#listPagingArea div#pagingDiv span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	cursor: default;
+}
+
+div#listPagingArea div#pagingDiv span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* /////////////////////////////////////////////////////// 레시피 리스트 css  */
+
+/* /////////////////////////////////////////////////////// 레시피 글쓰기 css  */
+
+main#main>div.recipeWrite h3 {
+	text-align: center;
+	padding: 10px 0;	
+	margin-bottom: 20px;
+	/* background-color: rgba(0, 136, 255, 0.2); */
+}
+
+#main>.recipeWrite table {
+	width: 80%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+#main>.recipeWrite table tbody td {
+	height: 60px;
+	padding: 10px;
+	border-bottom: 1px solid #aaa;
+}
+#main>.recipeWrite table tbody td:first-child {
+	width: 100px;
+	font-weight: bold;
+	text-align: right;
+}
+/* #main>.recipeWrite table tfoot td hr {
+	border: 2px solid #ccc;
+} */
+#main>.recipeWrite table tfoot td {
+	width: 100%;
+	
+	text-align: center;
+	padding: 30px 0;
+	/*border: 1px solid #aaa;*/
+}
+#main>.recipeWrite input#subject {
+	width: 579px;
+}
+
+
+::-webkit-file-upload-button {
+	font-weight: bold;
+	padding: 4px 10px;
+	cursor:pointer; 
+}
+
+
+#main>.recipeWrite textarea#content {
+	height: 140px;
+}
+
+#main>.recipeWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.recipeWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+#main>.recipeWrite input{
+	border: none;
+	
+	outline: none;
+}
+
+#main>.recipeWrite input,
+#main>.recipeWrite textarea  {
+	font-size: 17px;
+	padding: 4px 10px;
+}
+
+#main>.recipeWrite td.contentTD {
+	vertical-align: top;
+	padding-top: 30px;
+}
+
+
+#main>.recipeWrite span.spanFile {
+	padding: 10px;
+}
+
+
+#main>.recipeWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.recipeWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main>.recipeWrite button {
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 9px 5px;
+	border: none;
+	border-radius: 3px;
+	/* margin-top: 25px; */
+	background-color: rgb(255, 225, 85);
+}
+
+/* /////////////////////////////////////////////////////// 레시피 글쓰기 css  */

@@ -1,0 +1,389 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+@import url(style_Template.css);
+
+/*//////////////////////////// productAWrite.jsp 시작 ////////////////////////////*/
+
+div.Class_ProductWrite{
+	width: 900px;
+    margin: 10px auto;
+    padding: 0 20px 20px 10px;
+}
+
+.Class_ProductWrite div#Title input{
+	margin: 0 10px;
+    width: 860px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+.Class_ProductWrite div#Title input:focus{
+    outline:  none;
+}
+.Class_ProductWrite hr{
+	margin: 10px 0;
+	border: 1px solid rgb(255, 225, 85);
+}
+
+
+/*//////////////  .Class_ProductWrite table시작 //////////////*/
+.Class_ProductWrite table{
+	margin: 0 10px;
+	width: 850px;
+    border-collapse: collapse;
+	/* border: 1px solid rgb(157, 30, 30); */
+}
+
+.Class_ProductWrite table>tbody>tr{
+	line-height: 35px;  
+    border-bottom: 1px solid #ddd;
+}
+.Class_ProductWrite table>tbody tr>td{
+	font-weight: bold;
+}
+.Class_ProductWrite table>tbody tr>td>input{
+	width: 700px;
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid #fff;
+}
+.Class_ProductWrite table>tbody tr>td>input:focus{
+	outline : none;
+}
+.Class_ProductWrite table>tbody tr:nth-child(-n+7) td:first-child{
+	width: 120px;
+	font-weight: bold;
+	/* border: 1px solid #aaa; */
+}
+
+/*////// input#pOrigImg  시작 //////*/
+.Class_ProductWrite table>tbody tr>td>input#pOrigImg::file-Selector-button,
+ div#btnArea button{
+	font-weight: bold;
+	padding: 8px 10px;
+	border: 1px solid rgb(255, 225, 85);
+	background: rgb(255, 225, 85);
+}
+/*////// input#pOrigImg  끝 //////*/
+
+/*//////  select option 시작 //////*/
+tbody tr:last-child div#selectCtgArea select{
+	margin: 15px 0;
+	border: 1px solid rgb(255, 225, 85);
+	padding: 8px 10px;
+	width: 200px;
+	font-size: 15px;
+	
+	background:url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) 
+	  no-repeat 95% 50%/20px auto;
+	  
+	/* 기본스타일 제거 */
+	-webkit-appearance:none; /* 크롬 외형 */
+	-moz-appearance:none; /*파이어폭스 외형*/
+	appearance:none;
+}
+#selectCtgArea select::-ms-expand{
+   display:none; 
+} 
+tbody tr:last-child div#selectCtgArea select:focse{
+	outline:none;
+}
+/*//////  select option 끝 //////*/
+
+
+/*//////////////  .Class_ProductWrite table 끝 //////////////*/
+
+
+.Class_ProductWrite div#productContent{
+	margin: 0 10px;
+}
+.Class_ProductWrite div#productContent textarea{
+	margin-top: 20px;
+	padding: 10px;
+	font-size: 15px;
+	line-height: 12px;
+	border: 1px solid #fff;
+}
+.Class_ProductWrite div#productContent>textarea:focus{
+	outline:none;
+}
+
+div#btnArea button{
+	align-content: center;
+	text-align: center;
+	padding: 8px 20px;
+	font-size: 15px; 
+}
+
+
+.Class_ProductWrite span{
+	padding: 10px 0;
+	
+	position:relative;
+	left:750px;
+}
+/*//////  select option 시작 //////*/
+tbody tr:last-child div#selectCtgArea_Up select{
+	margin: 15px 0;
+	border: 1px solid rgb(255, 225, 85);
+	padding: 8px 10px;
+	width: 200px;
+	font-size: 15px;
+	
+	background:url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) 
+	  no-repeat 95% 50%/20px auto;
+	  
+	/* 기본스타일 제거 */
+	-webkit-appearance:none; /* 크롬 외형 */
+	-moz-appearance:none; /*파이어폭스 외형*/
+	appearance:none;
+}
+#selectCtgArea_Up select::-ms-expand{
+   display:none; 
+} 
+tbody tr:last-child div#selectCtgArea_Up select:focse{
+	outline:none;
+}
+/*//////  select option 끝 //////*/
+
+
+/*////////////////////////////  productAWrite.jsp끝 ////////////////////////////*/
+
+
+
+
+
+/*////////////////////////////  productContent.jsp 시작 ////////////////////////////*/
+.contentWrap{
+	padding: 15px;
+	margin: 0 auto;
+	width: 900px;
+}
+.contentWrap>.Class_ProductContent {
+	 display : flex;
+	 justify-content: space-evenly;
+	 /* border: 1px solid rgb(255, 0, 85); */
+}
+.contentWrap>.Class_ProductContent>.productInfo{
+	height: 400px;
+	width: 400px;
+	flex-grow:0;
+	position: relative;
+	/* border: 1px solid rgb(255, 225, 0); */
+}
+.contentWrap>.Class_ProductContent .productInfo:first-child{
+	padding: 10px;
+	/* border: 1px solid rgb(255, 105, 0); */
+}
+
+.contentWrap>.Class_ProductContent>.productInfo span{
+	color: #aaa;
+	
+	position: absolute;
+	top: 370px;
+	right: 20px;
+}
+
+
+/* ////// table 시작////// */
+
+.contentWrap>.Class_ProductContent table{
+	width: 100%;
+	margin-top: 10px;
+	border-collapse: collapse;
+	/* border: 1px solid rgb(255, 105, 85); */
+}
+.contentWrap>.Class_ProductContent table>tbody tr>td{
+	line-height: 40px;
+	padding-top: 8px;
+	border-bottom: 1px solid #fff;
+}
+table>tbody tr>td>label>span{
+	font-size: 15px;
+}
+.contentWrap>.Class_ProductContent table>tbody tr>td:first-child {
+	width: 120px;
+	font-weight: bold;
+}
+.Class_ProductContent table tr:nth-child(4)>td#pDiscountR{
+	color: #ee4a44;
+	font-size: 22px;
+	font-weight: normal;
+	/* border: 1px solid rgb(255, 105, 85); */
+}
+.Class_ProductContent table tr:last-child>td{
+	font-size: 20px;
+}
+.Class_ProductContent table tr:last-child>td:last-child {
+	/* border: 1px solid rgb(255, 105, 85); */
+	font-weight: bold;
+}
+.Class_ProductContent table tr:nth-child(4)>td>div#pOrigPrice{
+	text-decoration: line-through;
+}
+.Class_ProductContent table tr:nth-child(n+4)>td:last-child {
+	text-align: right;
+	padding-right: 10px;
+}
+/* ////// table 끝////// */
+
+div#productContent{
+	margin: 10px auto;
+	width: 95%;
+	height: 300px;
+	padding: 30px 20px;
+	/* border: 1px solid rgb(255, 105, 85); */
+}
+/*  div#contents+hr{
+	height: 2px;
+	border:1px solid rgb(225,225,85);
+	background-color: rgb(255, 225, 85);
+} */
+/*////////////////////////////  productContent.jsp 끝 ////////////////////////////*/
+
+
+/*////////////////////////////  productList.jsp시작 ////////////////////////////*/
+
+div.prodWrap{
+	display:inline-block;
+    width: 900px;
+    height: 1000px;
+    margin: 10px auto 100px;
+    padding: 10px;
+}
+div.sildes{
+    /* border: 1px solid #00f; */
+}
+div#pageInfo{
+	margin: 8px 0;
+	justify-content: flex-end;
+}
+div#pageInfo>div{
+	margin-left: 8px;
+}
+/* ///List 시작// */
+.prodListWrap{ 
+	margin: 5px;
+ 	/* border: 1px solid #ccc; */
+ 	flex-direction: row; /* 옆으로 */
+ 	flex-wrap: wrap;
+ 	flex-flow: row wrap;
+ 	justify-content: space-evenly;
+
+  	width: 870px;
+}
+.productItem{
+    width: 30%;
+    margin: 20px;
+    /* border: 1px solid #f00; */
+}
+.productItem>div#pNum{
+	margin: 5px;
+	padding: 7px 10px;
+	border-radius:50%;
+	font-weight: bold;
+	float: right;
+	background-color: #fff;
+}
+.productItem>div.pImg{
+	width: 100%;
+	height: 200px;
+	background-color: #ddd;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* ///List 끝// */
+
+/* //////// */
+div#pInfo{
+	line-height: 20px;
+	/* border: 1px solid #06f; */
+}
+div#pInfo>div{
+	display: flex;
+}
+div#pInfo>div>.col{
+	flex-grow: 1;  /* 꽉채우기 */
+	/* border: 1px solid #088; */
+}
+#pInfo>div#pName{
+	margin: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+div#pInfo>div#outline>div#pDiscountR{
+	color: #ee4a44;
+	font-size: 22px;
+	font-weight: bold;
+}
+#outline>div.cartBtn>button{
+	margin: 5px;
+	padding: 7px 10px;
+	border-radius:50%;
+	font-weight: bold;
+	background-color: #fff;
+}
+#pOrigPrice{
+	margin: 8px 0 3px 12px;
+	font-size: 18px;
+}
+#pSellPrice{
+	margin: 8px 0 3px 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+/* //////// */
+.listBottom{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+}
+form#searchFrm>div>select#keyField{
+	margin: 15px 0;
+	border: 1px solid rgb(255, 225, 85);
+	padding: 8px 10px;
+	width: 80px;
+	font-size: 15px;
+	
+	background:url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) 
+	  no-repeat 95% 50%/20px auto;
+	  
+	/* 기본스타일 제거 */
+	-webkit-appearance:none; /* 크롬 외형 */
+	-moz-appearance:none; /*파이어폭스 외형*/
+	appearance:none;
+}
+input#keyWord{
+	margin: 15px 0;
+	padding: 8px 10px;
+	font-size: 15px; 
+}
+button#searchBtn{
+	margin: 15px 0;
+	padding: 8px 10px;
+}
+/*////////////////////////////  productList.jsp끝 ////////////////////////////*/
+
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
+
+/*////////////////////////////  시작 ////////////////////////////*/
+/*////////////////////////////  끝 ////////////////////////////*/
